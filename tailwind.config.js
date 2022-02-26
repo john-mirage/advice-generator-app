@@ -8,10 +8,6 @@ module.exports = {
   theme: {
     screens: {
       sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px',
-      '2xl': '1400px',
     },
     colors: {
       'light-cyan': 'hsl(193, 38%, 86%)',
@@ -26,6 +22,9 @@ module.exports = {
           'Manrope',
           ...defaultTheme.fontFamily.sans,
         ]
+      },
+      boxShadow: {
+        'button': '0 0 50px -12px rgb(0 0 0 / 0.25)'
       },
     },
   },
