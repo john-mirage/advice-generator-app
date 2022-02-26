@@ -11,7 +11,25 @@
         <title>Advice Generator App</title>
     </head>
 
-    <body>
+    <body class="flex px-4 pt-12 pb-20 w-full min-h-screen bg-very-dark-blue">
+        <main class="relative w-full h-auto m-auto p-6 bg-dark-grayish-blue rounded-lg text-center">
+            <h1 id="advice-id" class="w-full h-auto text-xs text-neon-green uppercase tracking-[0.2rem] font-extrabold mb-5 mt-4"></h1>
+            <p id="advice-content" class="w-full h-auto text-2xl leading-9 text-light-cyan font-extrabold mb-6"></p>
+            <svg class="w-full h-auto mb-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 16">
+                <g fill="none" fill-rule="evenodd">
+                    <path class="fill-grayish-blue" d="M0 8h122v1H0zM173 8h122v1H173z"/>
+                    <g transform="translate(138)" fill="#CEE3E9">
+                        <rect width="6" height="16" rx="3"/>
+                        <rect x="14" width="6" height="16" rx="3"/>
+                    </g>
+                </g>
+            </svg>
+            <button id="advice-random-button" class="flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 rounded-full bg-neon-green">
+                <svg class="w-6 h-auto m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
+                </svg>
+            </button>
+        </main>
         <script type="module" src="/src/main.ts"></script>
     </body>
     
