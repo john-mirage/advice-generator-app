@@ -1,8 +1,8 @@
 import './assets/styles/style.css'
 
-const adviceIdElement = document.getElementById("advice-id")
-const adviceContentElement = document.getElementById("advice-content")
-const randomAdviceButton = document.getElementById("advice-random-button")
+const adviceIdElement = document.getElementById("advice-id") as HTMLElement;
+const adviceContentElement = document.getElementById("advice-content") as HTMLElement;
+const randomAdviceButton = document.getElementById("advice-random-button") as HTMLElement;
 
 /**
  * Get a random advice from the API.
@@ -26,7 +26,7 @@ async function showRandomAdvice() {
  * 
  * @param event - The event
  */
-function handleRandomAdviceButton(event) {
+function handleRandomAdviceButton(event: Event) {
     event.preventDefault()
     showRandomAdvice()
 }
