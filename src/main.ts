@@ -18,7 +18,7 @@ async function getRandomAdvice() {
 async function showRandomAdvice() {
     const slip = await getRandomAdvice()
     adviceIdElement.innerText = `advice #${slip.id}`
-    adviceContentElement.innerText = `"${slip.advice}"`
+    adviceContentElement.innerText = slip.advice
 }
 
 /**

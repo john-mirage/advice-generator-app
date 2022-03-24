@@ -11,11 +11,12 @@
         <title>Advice Generator App</title>
     </head>
 
-    <body class="flex px-4 sm:px-8 pt-12 pb-20 w-full min-h-screen bg-very-dark-blue">
-        <main class="relative container m-auto p-6 sm:p-12 bg-dark-grayish-blue rounded-lg text-center">
-            <h1 id="advice-id" class="w-full h-auto text-xs text-neon-green uppercase tracking-[0.2rem] font-extrabold mb-5 mt-4">Loading advice...</h1>
-            <p id="advice-content" class="w-full h-auto text-2xl leading-9 text-light-cyan font-extrabold mb-6 sm:mb-10"></p>
-            <svg class="w-full h-auto mb-10 sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 16">
+    <body class="px-4 pt-[120px] pb-20 w-full min-h-screen bg-very-dark-blue sm:px-8 sm:flex">
+        
+        <main class="relative w-full px-6 pt-10 pb-16 bg-dark-grayish-blue rounded-lg shadow-md text-center sm:max-w-card sm:m-auto sm:px-12 sm:pt-12 sm:pb-16">
+            <h1 id="advice-id" class="w-full h-auto text-xs text-neon-green uppercase tracking-[0.18rem] font-extrabold mb-6 mt-4 sm:text-sm sm:tracking-[0.21rem] sm:mb-8"></h1>
+            <p class="w-full h-auto text-2xl leading-9 text-light-cyan font-extrabold mb-6 sm:leading-10 sm:mb-10 sm:text-[28px]">&#8220;<span id="advice-content">Loading advice...</span>&#8221;</p>
+            <svg class="w-full h-auto sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 16">
                 <g fill="none" fill-rule="evenodd">
                     <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
                     <g transform="translate(138)" fill="#CEE3E9">
@@ -24,7 +25,7 @@
                     </g>
                 </g>
             </svg>
-            <svg class="hidden sm:block sm:w-full sm:h-auto sm:mb-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 16">
+            <svg class="hidden sm:block sm:w-full sm:h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 16">
                 <g fill="none" fill-rule="evenodd">
                     <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/>
                     <g transform="translate(212)" fill="#CEE3E9">
@@ -39,6 +40,7 @@
                 </svg>
             </button>
         </main>
+
         <script type="module" src="/src/main.ts"></script>
     </body>
     

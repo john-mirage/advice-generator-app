@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '576px',
+      sm: '572px',
     },
     colors: {
       'light-cyan': 'hsl(193, 38%, 86%)',
@@ -23,8 +23,11 @@ module.exports = {
           ...defaultTheme.fontFamily.sans,
         ]
       },
+      maxWidth: {
+        "card": "540px",
+      },
       boxShadow: {
-        'button': '0 0 50px -12px rgb(0 0 0 / 0.25)'
+        'button': '0 0 48px -8px rgb(0 0 0 / 0.4)'
       },
     },
   },
